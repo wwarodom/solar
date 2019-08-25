@@ -7,7 +7,7 @@ contract Main {
 
     Energy  energy;
     Thb thb;
-
+  
     function getEnergy(address addr) public returns (uint) {
         energy = Energy(addr);
     }
@@ -21,7 +21,7 @@ contract Main {
 
     }
 
-    function getMain() public  pure returns (string memory) {
+    function getMain() public  pure returns (string memory ) {
         return "Main function";
     }
 
