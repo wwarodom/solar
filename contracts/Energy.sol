@@ -1,4 +1,4 @@
-pragma solidity >=0.4.21 <0.6.0;
+pragma solidity 0.5.1;
 
 contract Energy {
 
@@ -28,6 +28,11 @@ contract Energy {
         balance[owner] = totalCoin;
     }
     
+
+    function getEnergyName() public pure returns (string memory) {
+        return "Energy ha ha";  
+    }
+
     function totalSupply() public view returns (uint256 ) {
         return totalCoin;
     }
@@ -70,7 +75,7 @@ contract Energy {
  
     /**   
        * @dev Function to mint tokens
-       * @param _to The address that will recieve the minted tokens.
+       * @param _to The  address that will recieve the minted tokens.
        * @param _amount The amount of tokens to mint.
        * @return A boolean that indicates if the operation was successful.
        */

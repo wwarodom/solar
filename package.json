@@ -1,0 +1,32 @@
+{
+  "name": "solar",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {
+    "ethereumjs-tx": "^2.1.1",
+    "fs": "^0.0.1-security",
+    "live-server": "^1.2.1",
+    "path": "^0.12.7",
+    "safer-buffer": "^2.1.2",
+    "web3": "^1.2.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wwarodom/solar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wwarodom/solar/issues"
+  },
+  "homepage": "https://github.com/wwarodom/solar#readme"
+}

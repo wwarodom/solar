@@ -1,0 +1,346 @@
+{
+  "contractName": "Test",
+  "abi": [
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "getString",
+      "outputs": [
+        {
+          "name": "",
+          "type": "string"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "pure",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.1+commit.c8a2cb62\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"constant\":true,\"inputs\":[],\"name\":\"getString\",\"outputs\":[{\"name\":\"\",\"type\":\"string\"}],\"payable\":false,\"stateMutability\":\"pure\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/wwarodom/blockchain/solar/contracts/Test.sol\":\"Test\"},\"evmVersion\":\"byzantium\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/wwarodom/blockchain/solar/contracts/Test.sol\":{\"keccak256\":\"0x8f92ffc7c03711c3a6d65d666845869cfd18d954f5509b49443ad168a2f0df09\",\"urls\":[\"bzzr://d0844dda182accdee108016f2dfff12605731e39e413c2e649bc767be76794e9\"]}},\"version\":1}",
+  "bytecode": "0x608060405234801561001057600080fd5b50610139806100206000396000f3fe60806040526004361061003b576000357c01000000000000000000000000000000000000000000000000000000009004806389ea642f14610040575b600080fd5b34801561004c57600080fd5b506100556100d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009557808201518184015260208101905061007a565b50505050905090810190601f1680156100c25780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600381526020017f466f6f000000000000000000000000000000000000000000000000000000000081525090509056fea165627a7a72305820563b00bcb23a5f0b51bae82113f44cf87ba3e7582ab2eda00ecf83da8d6bc1df0029",
+  "deployedBytecode": "0x60806040526004361061003b576000357c01000000000000000000000000000000000000000000000000000000009004806389ea642f14610040575b600080fd5b34801561004c57600080fd5b506100556100d0565b6040518080602001828103825283818151815260200191508051906020019080838360005b8381101561009557808201518184015260208101905061007a565b50505050905090810190601f1680156100c25780820380516001836020036101000a031916815260200191505b509250505060405180910390f35b60606040805190810160405280600381526020017f466f6f000000000000000000000000000000000000000000000000000000000081525090509056fea165627a7a72305820563b00bcb23a5f0b51bae82113f44cf87ba3e7582ab2eda00ecf83da8d6bc1df0029",
+  "sourceMap": "23:109:3:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;23:109:3;;;;;;;",
+  "deployedSourceMap": "23:109:3:-;;;;;;;;;;;;;;;;;;;;;;53:77;;8:9:-1;5:2;;;30:1;27;20:12;5:2;53:77:3;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;23:1:-1;8:100;33:3;30:1;27:10;8:100;;;99:1;94:3;90:11;84:18;80:1;75:3;71:11;64:39;52:2;49:1;45:10;40:15;;8:100;;;12:14;53:77:3;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;95:13;114:12;;;;;;;;;;;;;;;;;;;;53:77;:::o",
+  "source": "pragma solidity 0.5.1;\ncontract Test {\n\tstring str;\n\tfunction getString() public pure returns (string memory) {\n\t\treturn \"Foo\";\n\t}\n}",
+  "sourcePath": "/Users/wwarodom/blockchain/solar/contracts/Test.sol",
+  "ast": {
+    "absolutePath": "/Users/wwarodom/blockchain/solar/contracts/Test.sol",
+    "exportedSymbols": {
+      "Test": [
+        453
+      ]
+    },
+    "id": 454,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 442,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 453,
+        "linearizedBaseContracts": [
+          453
+        ],
+        "name": "Test",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 444,
+            "name": "str",
+            "nodeType": "VariableDeclaration",
+            "scope": 453,
+            "src": "40:10:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 443,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "40:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 451,
+              "nodeType": "Block",
+              "src": "110:20:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "466f6f",
+                    "id": 449,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "121:5:3",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_b608c74283f334e1f047dbbf1daa2407d41d4689aca67c422796f936acce16b7",
+                      "typeString": "literal_string \"Foo\""
+                    },
+                    "value": "Foo"
+                  },
+                  "functionReturnParameters": 448,
+                  "id": 450,
+                  "nodeType": "Return",
+                  "src": "114:12:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 452,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getString",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 445,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "71:2:3"
+            },
+            "returnParameters": {
+              "id": 448,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 447,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 452,
+                  "src": "95:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 446,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "95:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "94:15:3"
+            },
+            "scope": 453,
+            "src": "53:77:3",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 454,
+        "src": "23:109:3"
+      }
+    ],
+    "src": "0:132:3"
+  },
+  "legacyAST": {
+    "absolutePath": "/Users/wwarodom/blockchain/solar/contracts/Test.sol",
+    "exportedSymbols": {
+      "Test": [
+        453
+      ]
+    },
+    "id": 454,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 442,
+        "literals": [
+          "solidity",
+          "0.5",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:22:3"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 453,
+        "linearizedBaseContracts": [
+          453
+        ],
+        "name": "Test",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 444,
+            "name": "str",
+            "nodeType": "VariableDeclaration",
+            "scope": 453,
+            "src": "40:10:3",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_string_storage",
+              "typeString": "string"
+            },
+            "typeName": {
+              "id": 443,
+              "name": "string",
+              "nodeType": "ElementaryTypeName",
+              "src": "40:6:3",
+              "typeDescriptions": {
+                "typeIdentifier": "t_string_storage_ptr",
+                "typeString": "string"
+              }
+            },
+            "value": null,
+            "visibility": "internal"
+          },
+          {
+            "body": {
+              "id": 451,
+              "nodeType": "Block",
+              "src": "110:20:3",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "hexValue": "466f6f",
+                    "id": 449,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": true,
+                    "kind": "string",
+                    "lValueRequested": false,
+                    "nodeType": "Literal",
+                    "src": "121:5:3",
+                    "subdenomination": null,
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_stringliteral_b608c74283f334e1f047dbbf1daa2407d41d4689aca67c422796f936acce16b7",
+                      "typeString": "literal_string \"Foo\""
+                    },
+                    "value": "Foo"
+                  },
+                  "functionReturnParameters": 448,
+                  "id": 450,
+                  "nodeType": "Return",
+                  "src": "114:12:3"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 452,
+            "implemented": true,
+            "kind": "function",
+            "modifiers": [],
+            "name": "getString",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 445,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "71:2:3"
+            },
+            "returnParameters": {
+              "id": 448,
+              "nodeType": "ParameterList",
+              "parameters": [
+                {
+                  "constant": false,
+                  "id": 447,
+                  "name": "",
+                  "nodeType": "VariableDeclaration",
+                  "scope": 452,
+                  "src": "95:13:3",
+                  "stateVariable": false,
+                  "storageLocation": "memory",
+                  "typeDescriptions": {
+                    "typeIdentifier": "t_string_memory_ptr",
+                    "typeString": "string"
+                  },
+                  "typeName": {
+                    "id": 446,
+                    "name": "string",
+                    "nodeType": "ElementaryTypeName",
+                    "src": "95:6:3",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_string_storage_ptr",
+                      "typeString": "string"
+                    }
+                  },
+                  "value": null,
+                  "visibility": "internal"
+                }
+              ],
+              "src": "94:15:3"
+            },
+            "scope": 453,
+            "src": "53:77:3",
+            "stateMutability": "pure",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 454,
+        "src": "23:109:3"
+      }
+    ],
+    "src": "0:132:3"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.1+commit.c8a2cb62.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x18638b626362d2d56C72803ea1a05D80eefb805e",
+      "transactionHash": "0x2e8da4c9f68a12c178730051546eca74f1ea4fb7ac640cf97e0f97f7421ba18d"
+    }
+  },
+  "schemaVersion": "3.0.11",
+  "updatedAt": "2019-09-02T08:36:12.818Z",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}

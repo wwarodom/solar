@@ -8,13 +8,14 @@ contract Main {
     Energy  energy;
     Thb thb;
   
-    function getEnergy(address addr) public returns (uint) {
-        energy = Energy(addr);
+    function getEnergy() public returns (Energy) {
+        energy = new Energy('name','sym', 11);
+        return energy;
     }
 
-    function getThb(address addr) public returns (uint) {
-        thb = Thb(addr);
-    }
+    // function getThb(address addr) public returns (uint) {
+    //     thb = Thb(addr);
+    // }
 
     function test(address to) public  {
         energy.mint(to, 200);

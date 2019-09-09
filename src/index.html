@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+   <title>Hello World</title>
+   <script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.36/dist/web3.min.js" integrity="sha256-nWBTbvxhJgjslRyuAKJHK+XcZPlCnmIAAMixz6EefVk=" crossorigin="anonymous"></script> 
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+   <script language="javascript" type="text/javascript" src="./abi.js"></script> 
+ <script language="javascript" type="text/javascript" src="./app.js"></script> 
+    
+</head>
+
+<body>
+  <div class="container">
+    <h2>Blockchain Solar Equity Sharing</h2>
+  
+    <br>  
+
+    <div class="row">
+      <div class="col-md-6">
+
+        <form class="form-inline">
+          <div class="form-group"><label>Mint</label>
+            <input type="number" class="form-control" id="inputMint" value="10">
+             <button type="button" class="btn btn-primary" id="btnMint">Mint</button>
+          </div>
+          <div class="form-group">
+            <label for="inputBurn">Burn</label>
+            <input type="number" class="form-control" id="inputBurn" value="10">
+             <button type="button" class="btn btn-primary" id="btnBurn">Burn</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <br>
+    <div class="row">
+      <div class="col-md-6">
+        <form>
+            <div class="form-group col-md-12">
+              <div class="form-group"><label for="inputRecv">Transfer from Owner to: </label>
+                <input type="text" class="form-control" id="inputRecvAccount" value="0xFa61EA5c6dD5EE3cbE8fb80903a40eb1dEba40C7" size="50"> 
+              </div>
+              <div class="form-group">
+                <label for="inputTransfer">Amount: </label>
+                <input type="number" class="form-control" id="inputTransferAmount" value="20">                
+             </div>
+              <button type="button" class="btn btn-primary" id="btnTransfer">Transfer</button>
+            </div>
+          
+        </form>
+      </div>
+    </div>
+ 
+    Total supply: <span id="balance"></span>
+
+      <br/> <br/> 
+     Owner: 0x52E9422c92bD129189AAE28DE2bfc5f566bFc8d6: <span id="owner1"></span> THB <br/>
+     User1: 0xFa61EA5c6dD5EE3cbE8fb80903a40eb1dEba40C7: <span id="user1"></span> THB <br/>
+     User2: 0x858Ce395cb791Cb2c87c69368b522F30F60bB073: <span id="user2"></span> THB <br/>
+ </div>
+</body>
+</html>

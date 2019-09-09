@@ -1,4 +1,5 @@
-pragma solidity >=0.4.21 <0.6.0;
+// pragma solidity >=0.4.21 <0.6.0;
+pragma solidity 0.5.1;
 
 contract Thb {
 
@@ -90,7 +91,7 @@ contract Thb {
         emit MintFinished();
         return true;
      }
-  
+    
     function burn(uint256 _value) public returns (bool success) {
         require(balance[msg.sender] >= _value);   // Check if the sender has enough
         balance[msg.sender] -= _value;            // Subtract from the sender
@@ -98,4 +99,8 @@ contract Thb {
         emit Burn(msg.sender, _value);
         return true;
     }    
+
+    function getMyName() public pure returns (string memory) {
+      return "Thai baht";
+    }
 }
